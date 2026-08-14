@@ -40,7 +40,7 @@ The private engineering repositories remain non-public while Git history, creden
 ## Selected evidence
 
 - [DVTA Security Assessment](https://muath-yousef.github.io/Reports/) — authorized grey-box assessment of DVTA v2.0 in an isolated lab, documenting 12 confirmed findings with evidence and mitigations.
-- [Project Synapse](https://github.com/Muath-Yousef/project-synapse) — graduation-project architecture with explicit scope, maturity, safety, and evidence boundaries.
+- [Project Synapse](https://github.com/Muath-Yousef/project-synapse) — hybrid SOC graduation project. Its academic report records 967 events/second sustained throughput, 15.96-second average latency, and 95.9% precision in the single-node PSM experiment; GitHub clearly labels these as report-backed while the public reproduction package is completed.
 - [SOCRoot](https://socroot.com) — public product surface for the separate commercial service direction.
 
 ## Engineering principles
