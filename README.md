@@ -22,6 +22,8 @@ I am building **SOCRoot**, an evolving security engineering initiative that grew
 | SOC runtime | [Project-Synapse-SOC-Factory](https://github.com/Muath-Yousef/Project-Synapse-SOC-Factory) | Alert ingestion, triage, orchestration, HITL, and evidence capture |
 | Product website | [kyriesoc](https://github.com/Muath-Yousef/kyriesoc) | Public SOCRoot website and product communication |
 
+For a status-aware view of the account—including active, historical, private, and safety-review work—see the [repository guide](REPOSITORY_GUIDE.md).
+
 ## Selected evidence
 
 - [DVTA Security Assessment](https://github.com/Muath-Yousef/Reports) — authorized grey-box assessment of DVTA v2.0 in an isolated lab, documenting 12 confirmed findings with evidence and mitigations
