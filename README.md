@@ -18,16 +18,16 @@ I am building **SOCRoot**, an evolving security engineering initiative that grew
 | Layer | Repository | Purpose |
 |---|---|---|
 | Public architecture | [project-synapse](https://github.com/Muath-Yousef/project-synapse) | Architecture, engineering principles, maturity, and roadmap |
-| Control plane | [ide-agentic-engine](https://github.com/Muath-Yousef/ide-agentic-engine) | Portals, RBAC, client state, evidence workflows, and observability |
-| SOC runtime | [Project-Synapse-SOC-Factory](https://github.com/Muath-Yousef/Project-Synapse-SOC-Factory) | Alert ingestion, triage, orchestration, HITL, and evidence capture |
 | Product website | [kyriesoc](https://github.com/Muath-Yousef/kyriesoc) | Public SOCRoot website and product communication |
+| Engineering portfolio | [portfolio-site](https://github.com/Muath-Yousef/portfolio-site) | Selected work, delivery principles, and project maturity |
+| Assessment evidence | [Reports](https://github.com/Muath-Yousef/Reports) | Authorized, lab-scoped security assessment artifacts |
 
-For a status-aware view of the account—including active, historical, private, and safety-review work—see the [repository guide](REPOSITORY_GUIDE.md).
+The canonical control plane and SOC runtime are private while their Git histories undergo security review. For a status-aware view of the account—including active, archived, private, and safety-review work—see the [repository guide](REPOSITORY_GUIDE.md).
 
 ## Selected evidence
 
 - [DVTA Security Assessment](https://github.com/Muath-Yousef/Reports) — authorized grey-box assessment of DVTA v2.0 in an isolated lab, documenting 12 confirmed findings with evidence and mitigations
-- [Portfolio](https://github.com/Muath-Yousef/portfolio-site) — selected cybersecurity engineering work and delivery principles
+- [SOCRoot architecture](https://github.com/Muath-Yousef/project-synapse) — public system boundaries, maturity, threat model, and roadmap
 
 ## Technologies
 
@@ -44,4 +44,4 @@ Wazuh · TheHive · Shuffle · Python · FastAPI · Docker · PostgreSQL · Redi
 
 ## Connect
 
-[LinkedIn](https://www.linkedin.com/in/muath-ysf) · [GitHub](https://github.com/Muath-Yousef)
+[SOCRoot](https://socroot.com) · [LinkedIn](https://www.linkedin.com/in/muath-ysf) · [GitHub](https://github.com/Muath-Yousef)
