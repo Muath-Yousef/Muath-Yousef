@@ -26,7 +26,7 @@ The canonical control plane and SOC runtime are private while their Git historie
 
 ## Selected evidence
 
-- [DVTA Security Assessment](https://github.com/Muath-Yousef/Reports) — authorized grey-box assessment of DVTA v2.0 in an isolated lab, documenting 12 confirmed findings with evidence and mitigations
+- [DVTA Security Assessment](https://muath-yousef.github.io/Reports/) — authorized grey-box assessment of DVTA v2.0 in an isolated lab, documenting 12 confirmed findings with evidence and mitigations
 - [SOCRoot architecture](https://github.com/Muath-Yousef/project-synapse) — public system boundaries, maturity, threat model, and roadmap
 
 ## Technologies

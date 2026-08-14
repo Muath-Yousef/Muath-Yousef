@@ -40,11 +40,16 @@ These read-only repositories are retained to preserve design history or delivery
 - [security-workflows](https://github.com/Muath-Yousef/security-workflows) — unused placeholder superseded by the SOC runtime
 - [aipmcae.com](https://github.com/Muath-Yousef/aipmcae.com) — historical website delivery artifact, separate from SOCRoot
 
-## Private safety-review work
+## Archived private safety-review work
 
-`id-exposure-scanner` remains private pending duplicate and safe-release review. `socroot-demo-client` is private and archived as a quarantined client-delivery artifact.
+These repositories are private and read-only while security, history, or duplication questions remain unresolved:
 
-Private or experimental work should not be treated as public portfolio evidence until it passes that review.
+- `cyber_framework` — superseded SOC-automation prototype retained for controlled comparison
+- `id-exposure-scanner` — duplicate scanner prototype pending a safe-release decision
+- `socroot-node1` — frozen agent-orchestration experiment; production use is prohibited
+- `socroot-demo-client` — quarantined client-delivery artifact
+
+Private or experimental work is not public portfolio evidence and must not be reactivated or republished before the documented review gates are satisfied.
 
 ## Public-claim policy
 
