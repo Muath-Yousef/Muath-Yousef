@@ -1,12 +1,20 @@
 # Repository Guide
 
-This guide explains how to read the repositories on this account without confusing current engineering work, public documentation, assessment evidence, and historical artifacts.
+This guide separates current engineering work, public product communication, academic evidence, reusable tools, and historical artifacts.
+
+## Core ownership rule
+
+**Project Synapse and SOCRoot are independent projects.**
+
+- **Project Synapse** is the graduation project: an open-source cybersecurity architecture that combines security tooling with data analytics and is designed to scale.
+- **SOCRoot** is a commercial innovation intended to sell automatable cybersecurity services by subscription when they provide clear, measurable customer value.
+- Knowledge or code may be reused between them, but reuse does not merge scope, ownership, maturity, or success criteria.
 
 ## Maturity labels
 
 | Label | Meaning |
 |---|---|
-| **Active / canonical** | Current source of truth for its documented responsibility |
+| **Active / canonical** | Current source of truth for one documented responsibility |
 | **Active documentation** | Public architecture or portfolio material; not a production implementation |
 | **Pre-production** | Engineering work that still requires documented validation before production claims |
 | **Historical / archived** | Retained for provenance; no longer an active product direction |
@@ -14,40 +22,42 @@ This guide explains how to read the repositories on this account without confusi
 
 ## Active public work
 
-| Repository | Role | Current maturity |
+| Repository | Owner and role | Current maturity |
 |---|---|---|
-| [project-synapse](https://github.com/Muath-Yousef/project-synapse) | Public architecture, principles, boundaries, and roadmap behind SOCRoot | Active documentation |
-| [kyriesoc](https://github.com/Muath-Yousef/kyriesoc) | Public SOCRoot product website; repository name retained for deployment continuity | Active public surface |
-| [portfolio-site](https://github.com/Muath-Yousef/portfolio-site) | Cybersecurity engineering portfolio and delivery principles | Active portfolio |
-| [Reports](https://github.com/Muath-Yousef/Reports) | Selected authorized security-assessment evidence | Reference artifact |
+| [project-synapse](https://github.com/Muath-Yousef/project-synapse) | **Project Synapse:** graduation-project architecture, open-source components, data-analysis flow, evidence gates, and scalability roadmap | Active technical documentation |
+| [kyriesoc](https://github.com/Muath-Yousef/kyriesoc) | **SOCRoot:** public website, service positioning, value communication, and maturity boundaries | Active public surface; pre-production |
+| [portfolio-site](https://github.com/Muath-Yousef/portfolio-site) | Professional portfolio; presents Project Synapse and SOCRoot as separate tracks | Active portfolio |
+| [Reports](https://github.com/Muath-Yousef/Reports) | Selected authorized security-assessment evidence | Reference artifacts |
 
-## Private canonical engineering
+## Active private engineering
 
-| Repository | Role | Current maturity |
+| Repository | Owner and role | Current maturity |
 |---|---|---|
-| `ide-agentic-engine` | SOCRoot control plane: portals, RBAC, client state, evidence workflows, and observability | Active / canonical; pre-production; private during Git-history cleanup |
-| `Project-Synapse-SOC-Factory` | SOC runtime: ingestion, triage, orchestration, HITL, and evidence capture | Active / canonical; pre-production; private during Git-history cleanup |
-| `security-tools` | Canonical private security utilities | Active private work |
+| `ide-agentic-engine` | **SOCRoot candidate control plane:** portals, RBAC, client state, onboarding, evidence workflows, and observability | Active / pre-production / private safety review |
+| `Project-Synapse-SOC-Factory` | **Project Synapse runtime/POC:** ingestion, triage, orchestration, HITL, and evidence capture for technical validation | Active / pre-production / private safety review |
+| `security-tools` | Reusable authorized security utilities; not automatically owned by either project | Active private work |
 
-Private visibility is deliberate: current source trees have been sanitized, but historical commits must remain non-public until credential rotation, client-data review, and history cleanup are complete.
+Private visibility is deliberate. Current trees may be sanitized, but historical commits remain non-public until credential rotation, client-data review, dependency and license review, and history cleanup are complete.
+
+## Integration rule
+
+The SOCRoot control-plane candidate may integrate with a Project Synapse runtime component only through an explicit, tested contract. An integration is justified for SOCRoot only when it improves a service that a customer is willing to pay for; it is justified for Project Synapse only when it supports the graduation-project deliverable and evidence.
 
 ## Archived public artifacts
 
-These read-only repositories are retained to preserve design history or delivery provenance. They are not current SOCRoot implementation sources:
+These repositories preserve design history or delivery provenance and are not current implementation sources:
 
-- [Kyrie](https://github.com/Muath-Yousef/Kyrie) — earlier CyberShield/Kyrie blueprint
-- [synapse_workflow](https://github.com/Muath-Yousef/synapse_workflow) — frozen workflow visualization
-- [security-workflows](https://github.com/Muath-Yousef/security-workflows) — unused placeholder superseded by the SOC runtime
-- [aipmcae.com](https://github.com/Muath-Yousef/aipmcae.com) — historical website delivery artifact, separate from SOCRoot
+- [Kyrie](https://github.com/Muath-Yousef/Kyrie) — earlier CyberShield/Kyrie blueprint.
+- [synapse_workflow](https://github.com/Muath-Yousef/synapse_workflow) — frozen Project Synapse workflow visualization.
+- [security-workflows](https://github.com/Muath-Yousef/security-workflows) — unused placeholder.
+- [aipmcae.com](https://github.com/Muath-Yousef/aipmcae.com) — historical website delivery artifact, separate from both Project Synapse and SOCRoot.
 
 ## Archived private safety-review work
 
-These repositories are private and read-only while security, history, or duplication questions remain unresolved:
-
-- `cyber_framework` — superseded SOC-automation prototype retained for controlled comparison
-- `id-exposure-scanner` — duplicate scanner prototype pending a safe-release decision
-- `socroot-node1` — frozen agent-orchestration experiment; production use is prohibited
-- `socroot-demo-client` — quarantined client-delivery artifact
+- `cyber_framework` — superseded SOC-automation prototype retained for controlled comparison.
+- `id-exposure-scanner` — duplicate scanner prototype pending a safe-release decision.
+- `socroot-node1` — frozen SOCRoot agent experiment; production use is prohibited.
+- `socroot-demo-client` — quarantined SOCRoot client-delivery artifact.
 
 Private or experimental work is not public portfolio evidence and must not be reactivated or republished before the documented review gates are satisfied.
 
@@ -55,11 +65,14 @@ Private or experimental work is not public portfolio evidence and must not be re
 
 Across these repositories:
 
+- evidence is separated from aspiration;
 - sensitive remediation remains human-controlled;
 - SOAR dry-run is the default;
 - CDN and RFC1918 ranges are not automatically blocked;
 - DNS events remain notification-only;
 - raw client data is not sent to external AI providers;
-- production claims require documented tests, operational evidence, rollback paths, and security review.
+- production claims require documented tests, operational evidence, rollback paths, and security review;
+- Project Synapse metrics do not prove SOCRoot customer value;
+- SOCRoot revenue does not by itself validate the academic deliverable.
 
 Last reviewed: 2026-08-14.
